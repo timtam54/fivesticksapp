@@ -137,7 +137,6 @@ export default function EquipmentManagement() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
             </div>
           </div>
-        
           <Button variant="outlined" color="primary" onClick={toggleCheckboxes} style={{width:showCheckboxes?'200px':'500px'}}>
             {showCheckboxes ? 'Hide Select' : <><GridOnIcon/>Fieldlist, <PermDataSettingIcon/>Calibrate, <MoveUpIcon/>Transfer</>}
           </Button>
