@@ -137,10 +137,10 @@ export default function EquipmentManagement() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
             </div>
           </div>
-          <Button variant="outlined" color="primary" onClick={toggleCheckboxes} style={{width:showCheckboxes?'200px':'500px'}}>
+          <Button variant="outlined" color="primary" onClick={toggleCheckboxes} style={{width:showCheckboxes?'200px':'600px'}}>
             {showCheckboxes ? 'Hide Select' : <><GridOnIcon/>Fieldlist, <PermDataSettingIcon/>Calibrate, <MoveUpIcon/>Transfer</>}
           </Button>
-          {(selectedEquipment.length === 0)&&<div style={{color:'red'}}>check equipment items and then you can transfer, calibrate, export</div>}
+          {(selectedEquipment.length === 0)&&showCheckboxes&&<div style={{color:'red'}}>check equipment items and then you can transfer, calibrate, export</div>}
           {showCheckboxes && (
             <Button variant="contained" color="secondary" style={{backgroundColor:'red',width:'250px',color:'white'}} onClick={exportToCSV} disabled={selectedEquipment.length === 0}>
               <GridOnIcon/>Export Field List
