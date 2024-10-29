@@ -3,7 +3,7 @@
 import Header from '@/components/header'
 import React, { useState, useEffect } from 'react'
 
-// Mock data for staff and tasks
+
 const staffMembers = [
   { id: 1, name: 'Gregg' },
   { id: 2, name: 'Leonie' },
